@@ -11,6 +11,7 @@ public class Lab2Program1 {
 	javax.swing.JFrame window;
 
         window = new javax.swing.JFrame ();
+        //Adding a Comment here
 
         window.setSize(300,300);
         window.setTitle("My First Java Program in Lab");

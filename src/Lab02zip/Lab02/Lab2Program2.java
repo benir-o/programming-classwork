@@ -3,9 +3,10 @@
 
    File: Lab2Program2.java 
 */
-
+package Lab02zip.Lab02;
 import javax.swing.*;
 //import java.awt.*;
+//Import a class
 
 public class Lab2Program2 {
 
