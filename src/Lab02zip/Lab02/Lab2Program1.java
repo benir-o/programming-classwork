@@ -4,23 +4,26 @@ package Lab02zip.Lab02;
 
    File: Lab2Program1.java 
 */
+import javax.swing.*;
+import java.awt.*;
 public class Lab2Program1 {
 
     public static void main (String [] args) {
           
-	javax.swing.JFrame window;
+	JFrame window;
 
-        window = new javax.swing.JFrame ();
+        window = new JFrame ();
         //Adding a Comment here
 
-        window.setSize(300,300);
+        window.setSize(400,400);
         window.setTitle("My First Java Program in Lab");
 
-        java.awt.Point position;
+        Point position;
 
-	position = new java.awt.Point(200,500);
+        position = new Point(438,170);
 
         window.setLocation(position);
-	window.setVisible(true);
+	    window.setVisible(true);
+        JOptionPane.showMessageDialog(null,"Click OK to close me");
     }
 }
