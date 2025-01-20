@@ -16,6 +16,9 @@ public class Lab2Program2 {
 	String lastName;
 	String Mysplitter=JOptionPane.showInputDialog("Enter your Full name");
 	String[] operand=Mysplitter.split(" ");
+	firstName=operand[0];
+	lastName=operand[1];
+	JOptionPane.showMessageDialog(null,firstName.charAt(0)+"."+lastName.charAt(0)+". ");
 
     }
 }
