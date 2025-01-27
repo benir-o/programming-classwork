@@ -18,6 +18,18 @@ public class Employee {
         this.ssn=ssn;
         this.salary=salary;
     }
+    public double getSalary(){
+        return salary;
+    }
+    public double getSSN(){
+        return ssn;
+    }
+    public String getName(){
+        return Name;
+    }
+    public double getID(){
+        return EmployeeID;
+    }
     public void setName(String n){
         this.Name=n;
     }
