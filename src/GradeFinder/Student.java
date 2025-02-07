@@ -46,9 +46,7 @@ public class Student {
         this.total=this.mark1+this.mark2+this.mark3;
         this.average=this.total/3;
     }
-    public double getAverage(){
-        return average;
-    }
+
 
     void setName(String Name) {
         this.Name = Name;
@@ -62,8 +60,8 @@ public class Student {
         return Name;
     }
 
-    double getMark() {
-        return mark;
+    double getAverage() {
+        return average;
     }
 
 
@@ -82,14 +80,14 @@ public class Student {
     }
 
     public static char getGrade(Student student) {
-        if (student.getMark() < 40) {
+        if (student.getAverage() < 40) {
             student.grade = 'F';
-        } else if (student.getMark() < 50) {
+        } else if (student.getAverage() < 50) {
             student.grade = 'D';
 
-        } else if (student.getMark() < 60) {
+        } else if (student.getAverage() < 60) {
             student.grade = 'C';
-        } else if (student.getMark() < 70) {
+        } else if (student.getAverage() < 70) {
             student.grade = 'B';
         } else {
             student.grade = 'A';
@@ -100,7 +98,7 @@ public class Student {
 
     public static void displayStudents(Student[] students) {
         for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].Name + ": " + students[i].getMark() + " \t" + students[i].getGrade());
+            System.out.println(students[i].Name + ": " + students[i].getAverage() + " \t" + students[i].getGrade());
         }
 
     }
@@ -109,7 +107,7 @@ public class Student {
         String name;
         double mark1,mark2,mark3;
         double sum = 0.0;
-        double average;
+        double classaverage;
         for (int i = 0; i < students.length; i++) {
             name = JOptionPane.showInputDialog("Enter student name");
             mark1 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
@@ -121,13 +119,13 @@ public class Student {
                 i--;
             } else {
                 Student.getGrade(students[i]);
-                sum = sum + students[i].mark;
+                sum = sum + students[i].average;
             }
 
 
         }
-        average = sum / students.length;
-        System.out.println("Class average: " + average);
+        classaverage = sum / students.length;
+        System.out.println("Class average: " + classaverage);
 
     }
 
