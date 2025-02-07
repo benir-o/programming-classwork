@@ -1,15 +1,17 @@
 package GradeFinder;
 import javax.swing.*;
-import java.util.*;
+
 public class Student {
     protected String Name;
-    protected double mark;
+    protected double mark,mark1,mark2,mark3;
+    protected double total;
+    protected double average;
     protected char grade;
     protected int StudentID;
-    //protected double Sum;
+    protected double sum;
 
     public Student() {
-        mark = 50.0;
+        average = 50.0;
         Name = "Unknown";
         grade = 'C';
         StudentID = 555;
@@ -23,15 +25,29 @@ public class Student {
         setName(Name);
         setMark(Mark);
     }
-
-    public Student(String Name, int StudentID, double Mark) {
+    public Student(String Name,double Mark1,double Mark2,double Mark3){
         setName(Name);
-        setMark(Mark);
-
+        setMark(Mark1,Mark2,Mark3);
     }
 
-    void setMark(double mark) {
-        this.mark = mark;
+    public Student(String Name, int StudentID) {
+        setName(Name);
+        //setMark(Mark1,Mark2,Mark3);
+
+    }
+    void setMark(double Mark){
+        this.mark=Mark;
+    }
+
+    void setMark(double mark1,double mark2, double mark3) {
+        this.mark1=mark1;
+        this.mark2=mark2;
+        this.mark3=mark3;
+        this.total=this.mark1+this.mark2+this.mark3;
+        this.average=this.total/3;
+    }
+    public double getAverage(){
+        return average;
     }
 
     void setName(String Name) {
@@ -52,9 +68,15 @@ public class Student {
 
 
     public static boolean verify(Student student) {
-        if (student.mark < 0 || student.mark > 100) {
+        if (student.mark1 < 0 || student.mark1 > 100) {
             return false;
-        } else {
+        } else if (student.mark2<0 || student.mark2>100){
+
+            return false;
+        } else if (student.mark3<0 || student.mark3>100){
+            return false;
+        }
+        else {
             return true;
         }
     }
@@ -84,14 +106,16 @@ public class Student {
     }
 
     public static void FindAvg(Student[] students) {
-        String name1;
-        double mark1;
+        String name;
+        double mark1,mark2,mark3;
         double sum = 0.0;
         double average;
         for (int i = 0; i < students.length; i++) {
-            name1 = JOptionPane.showInputDialog("Enter student name");
-            mark1 = Double.parseDouble(JOptionPane.showInputDialog("Enter student Mark:"));
-            students[i] = new Student(name1, mark1);
+            name = JOptionPane.showInputDialog("Enter student name");
+            mark1 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
+            mark2 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
+            mark3 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
+            students[i] = new Student(name, mark1,mark2,mark3);
             if (verify(students[i]) == false) {
                 JOptionPane.showMessageDialog(null, "Wrong marks input. Enter name and marks again");
                 i--;
@@ -106,6 +130,7 @@ public class Student {
         System.out.println("Class average: " + average);
 
     }
+
 
 }
 
