@@ -111,8 +111,8 @@ public class Student {
         for (int i = 0; i < students.length; i++) {
             name = JOptionPane.showInputDialog("Enter student name");
             mark1 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
-            mark2 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
-            mark3 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
+            mark2 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 2 mark:"));
+            mark3 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 3 mark:"));
             students[i] = new Student(name, mark1,mark2,mark3);
             if (verify(students[i]) == false) {
                 JOptionPane.showMessageDialog(null, "Wrong marks input. Enter name and marks again");
