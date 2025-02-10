@@ -5,12 +5,14 @@ import java.text.NumberFormat;
 public class Employee {
     // Setting modifiers to protected will help me access attributes
     //Within the same package (Lesson3)
+    public static int countOfEmployees=0;
     protected int EmployeeID;
     protected String Name;
     protected int ssn;
     protected double salary;
     // Put in the constructor with arguments
     Employee(){
+        this.countOfEmployees++;
 
     }
     //Constructor overloading- There are 2 different constructors of the same class
@@ -19,6 +21,7 @@ public class Employee {
         this.Name=Name;
         this.ssn=ssn;
         this.salary=salary;
+        this.countOfEmployees++;
     }
     public double getSalary(){
         return salary;

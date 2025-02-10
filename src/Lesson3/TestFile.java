@@ -5,6 +5,12 @@ public class TestFile {
         System.out.println("This is the test File");
         //Create an instance of the Employee Class
         //Employee emp1=new Employee();
+        Employee emp1=new Employee();
+        Employee emp2=new Employee();
+        Employee emp3=new Employee();
+        Employee emp4=new Employee();
+        Employee emp5=new Employee();
+        System.out.println(Employee.countOfEmployees);
         Engineer e1=new Engineer(101,"Jane Smith",012-34-5678,120345.27);
         Manager m1= new Manager(207,"Barbara Johnson",054-12-2367,109501.36,"US Marketing");
         Admin a1=new Admin(304,"Bill Monroe",108-23-6509,75002.34);
@@ -30,5 +36,8 @@ public class TestFile {
         System.out.println("Security Number: "+emp.getSSN());
         System.out.println("Employee Salary: "+emp.getSalary());
 
+
     }
+
+
 }
