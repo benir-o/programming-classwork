@@ -37,6 +37,9 @@ public class Employee {
         salary+=increase;
         //this.salary=this.salary+increase;-- Try this in your free time and see what happens
     }
+    public String toString(){
+        return "The string representation of this object returns:\n"+"NAME: "+ this.Name + "\n"+"SSN: "+this.ssn+"\n"+"SALARY: "+this.salary ;
+    }
     // We now work on the children
 
 }

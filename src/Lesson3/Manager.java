@@ -17,6 +17,13 @@ public class Manager extends Employee{
     public String getDeptName(){
         return deptName;
     }
+    public void setDeptName(String deptName){
+        this.deptName=deptName;
+    }
+    public void raiseSalary(double raise){
+        double bonus=10000;
+        salary=salary*0.5 + bonus;
+    }
 }
 class RoundWindow extends JFrame{
     //Modifying a class from the baseclass
