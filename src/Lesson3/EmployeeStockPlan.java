@@ -7,6 +7,12 @@ public class EmployeeStockPlan {
         if (e instanceof Manager){
             return 100;
         }
-        return 0;
+        else if(e instanceof Director){
+            return 1000;
+        }
+        else{
+            return 10;
+        }
     }
+
 }

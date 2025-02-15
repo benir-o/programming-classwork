@@ -1,7 +1,8 @@
 package GeneralKnowledge;
 
+import java.util.Arrays;
 
-public class Arrays {
+public class ArraysExample {
     // An array is used to store multiple values in a single variable
 
     public static void main(String[] args) {
@@ -26,11 +27,14 @@ public class Arrays {
         System.out.println(weapons[2]);
         int[] numbers={35,47,82,93};
         show(numbers);
+
         //show(numbers);-- Helpful if we set our "show" method to be static, so as to enable it to be visible to other members
         //of the class.
         //But how do we pass an array to a function?
         //System.out.println(ReverseArray(numbers));
-        ReverseArray(numbers);
+        // How to print a reversed array
+        System.out.println(Arrays.toString(ReverseArray(numbers)));
+
     }
     //A function that displays the contents of an array
     public static void show(int[] numb){
