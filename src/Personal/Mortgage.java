@@ -66,8 +66,8 @@ public class Mortgage {
         float MonthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
         float numberOfPayments = years * MONTHS_IN_YEAR;
 
-        double balance=principal*((Math.pow(1+MonthlyInterest,numberOfPayments)-Math.pow(1+MonthlyInterest,numberOfPayments))
-                /(Math.pow(1+MonthlyInterest,numberOfPayments)-1));
+        double balance=principal*(Math.pow(1+MonthlyInterest,numberOfPayments)-Math.pow(1+MonthlyInterest,numberOfPaymentsMade)
+        /(Math.pow(1+MonthlyInterest,numberOfPayments)-1));
 
         return balance;
 
