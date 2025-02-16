@@ -1,83 +1,57 @@
 package Personal;
+import java.nio.file.attribute.GroupPrincipal;
+import java.text.NumberFormat;
 import java.util.*;
+
+
 public class Mortgage {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double principal;
-        double rate;
-        int years;
-        double interest;
-        A:
-        while (true) {
-            System.out.print("Enter Principal ($1k-$1M): ");
-            principal = sc.nextDouble();
-            B1: if (principal < 1000 || principal > 1000000) {
-                System.out.println("Enter accepted amount.");
-            }else{
-                A1: while (true){
-                    System.out.print("Enter rate (1%-30%): ");
-                    rate=sc.nextDouble();
-                    B: if (rate<1 || rate>30){
-                        System.out.println("Enter accepted rate");
-                    }else{
-                        A2: while (true){
-                            rate=rate/100;
-                            System.out.print("Enter number of years (1Y-30Y): ");
-                            years=sc.nextInt();
-                            if (years<1 || years>30){
-                                System.out.println("Enter accepted timeframe.");
-                            }else{
-                                A3: while(true){
-                                interest=principal*rate*(Math.pow(1+rate,years)/(Math.pow(1+rate,years)-1));
-                                    System.out.println("The amount will have compounded to: "+(principal+interest));
-                                    break A;
-                                }
-                            }
+        final byte MONTHS_IN_YEAR=12;
+        final byte PERCENT=100;
 
+        int principal=0;
+        float monthlyInterest=0;
+        int numberOfPayments=0;
 
-
-                        }
-
-
-
-                    }
-
-
-                }
-
-
+        Scanner scanner=new Scanner(System.in);
+        while (true){
+            System.out.print("Principal: ");
+            principal=scanner.nextInt();
+            if (principal>=100 && principal<=1000000)
+                break;
+            System.out.println("Enter a value between 1000 and 1000000");
+        }
+        while (true){
+            System.out.print("Annual interest rate: ");
+            float annualInterest=scanner.nextFloat();
+            if (annualInterest>=1 && annualInterest<=30){
+                monthlyInterest= annualInterest/PERCENT/MONTHS_IN_YEAR;
+                break;
             }
-
-
-
-
-
-
-//            else{
-//                System.out.print("Enter rate (1%-30%): ");
-//                rate=sc.nextDouble();
-//                if (rate<1 || rate >30){
-//                    System.out.println("Enter the accepted rate.");
-//
-//                }
-//                else{
-//                    rate=rate/100;
-//                    System.out.print("Enter number of years (1Y-30Y) ");
-//                    years=sc.nextInt();
-//                    if (years<1 || years>30){
-//                        System.out.println("Enter accepted timeframe.");
-//                    }
-//                    else{
-//                        interest=principal*rate*(Math.pow(1+rate,years)/(Math.pow(1+rate,years)-1));
-//                        System.out.println("After "+years+"years, the money accumulated will be: "+interest);
-//                        break A;
-//                    }
-//                }
-//
-//            }
-//
+            System.out.println("Enter a value between 1 and 30.");
+        }
+        A: while(true){
+            System.out.print("Period (years): ");
+            byte years=scanner.nextByte();
+            if (years>=1 && years<=30){
+                numberOfPayments=years*MONTHS_IN_YEAR;
+                double mortgage= principal* (monthlyInterest* Math.pow(1+monthlyInterest,numberOfPayments)
+                        /(Math.pow(1+monthlyInterest,numberOfPayments)-1)
+                );
+                String mortgageFormatted= NumberFormat.getCurrencyInstance().format(mortgage);
+                System.out.println("Mortgage: "+ mortgageFormatted);
+                break A;
+            }
         }
 
 
-        }
     }
+
+
+
+
+
+
+
+
+}
