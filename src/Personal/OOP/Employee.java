@@ -13,6 +13,7 @@ public class Employee {
         setHourlyRate(hourlyRate);
         numberOfEmployees++;
     }
+    //Methods and variables can be polymorphic
 
 
     public int calculateWage(int extraHours){

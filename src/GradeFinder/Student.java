@@ -1,5 +1,7 @@
 package GradeFinder;
+import javax.naming.Name;
 import javax.swing.*;
+import java.io.FilenameFilter;
 
 public class Student {
     protected String Name;
@@ -9,12 +11,16 @@ public class Student {
     protected char grade;
     protected int StudentID;
     protected double sum;
+    final int Number_of_tests=3;
 
     public Student() {
         average = 50.0;
         Name = "Unknown";
         grade = 'C';
         StudentID = 555;
+    }
+    public Student(String name){
+        this(name,0);
     }
 
     public Student(double mark) {
@@ -44,7 +50,7 @@ public class Student {
         this.mark2=mark2;
         this.mark3=mark3;
         this.total=this.mark1+this.mark2+this.mark3;
-        this.average=this.total/3;
+        this.average=this.total/Number_of_tests;
     }
 
 
