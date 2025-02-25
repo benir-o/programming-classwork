@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP) Repository
+# Classwork Repository
 
 Welcome to the **OOP Repository**! This repository contains examples and exercises related to Object-Oriented Programming, specifically in Java. It serves as a resource for learning and implementing OOP concepts.
 
@@ -27,9 +27,10 @@ ClassWork/
 ### Prerequisites
 - Java Development Kit (JDK) installed
 - Any Java IDE (IntelliJ IDEA, Eclipse, or VS Code)
+- I used IntelliJ IDEA
 
 
-- **GitHub:** [your-username](https://github.com/your-username)
+- **GitHub:** [your-username](https://github.com/benir-o)
 
 
 
