@@ -1,6 +1,6 @@
 # Classwork Repository
 
-Welcome to the **OOP Repository**! This repository contains examples and exercises related to Object-Oriented Programming, specifically in Java. It serves as a resource for learning and implementing OOP concepts.
+Welcome to my **OOP Repository**! This repository contains examples and exercises related to Object-Oriented Programming, specifically in Java. It serves as a resource for learning and implementing OOP concepts.
 
 ## 📌 Topics Covered
 - Classes and Objects
