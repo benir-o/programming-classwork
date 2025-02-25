@@ -14,14 +14,14 @@ Welcome to the **OOP Repository**! This repository contains examples and exercis
 - Design Patterns
 
 ## 📂 Repository Structure
-```
+
 ClassWork/
-│── src/                   # Source code files
-│── docs/                  # Documentation and notes
-│── examples/              # Code examples demonstrating OOP concepts
-│── projects/              # Small projects implementing OOP principles
-│── README.md              # Repository overview
-```
+│── src/                      # Source code files
+│── GeneralKnowledge/         # Knowledge on Procedural programming
+│── GradeFinder/              # Code examples demonstrating OOP concepts
+│── Interfces/                # A general understanding on how interfaces work
+│── README.md                 # Repository overview
+
 
 ## 🚀 Getting Started
 ### Prerequisites
