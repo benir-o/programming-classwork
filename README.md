@@ -15,7 +15,7 @@ Welcome to the **OOP Repository**! This repository contains examples and exercis
 
 ## 📂 Repository Structure
 ```
-ClassWork1/
+ClassWork/
 │── src/                   # Source code files
 │── docs/                  # Documentation and notes
 │── examples/              # Code examples demonstrating OOP concepts
