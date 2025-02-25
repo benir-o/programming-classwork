@@ -10,7 +10,6 @@ public class Student {
     protected double average;
     protected char grade;
     protected int StudentID;
-    protected double sum;
     final int Number_of_tests=3;
 
     public Student() {
@@ -19,9 +18,9 @@ public class Student {
         grade = 'C';
         StudentID = 555;
     }
-    public Student(String name){
-        this(name,0);
-    }
+    //Create a class consisting of
+    //undergraduates, graduates and lecturers
+
 
     public Student(double mark) {
         setMark(mark);

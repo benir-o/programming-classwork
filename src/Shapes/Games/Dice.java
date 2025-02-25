@@ -1,4 +1,4 @@
-package Shape.Games;
+package Shapes.Games;
 class Conversion{
     //Defining an attribute called a
     private int a;

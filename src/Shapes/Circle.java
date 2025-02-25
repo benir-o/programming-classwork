@@ -1,9 +1,15 @@
-package Shape;
+package Shapes;
 
-public class Circle {
+public class Circle extends Shape{
     private double radius;
     private final double pi=3.14;
     //This keyword makes something a constant.
+
+
+    @Override
+    public void someMethod() {
+        System.out.println("A method specified for a certain class");
+    }
 
     public Circle(double radius){
         this.radius=radius;
