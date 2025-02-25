@@ -30,7 +30,7 @@ ClassWork/
 - I used IntelliJ IDEA
 
 
-- **GitHub:** [your-username](https://github.com/benir-o)
+- **GitHub:** [benir-o](https://github.com/benir-o)
 
 
 
