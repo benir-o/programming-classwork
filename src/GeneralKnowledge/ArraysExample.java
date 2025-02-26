@@ -4,6 +4,12 @@ import java.util.Arrays;
 
 public class ArraysExample {
     // An array is used to store multiple values in a single variable
+    public int[] reversearray(int [] arr1){
+        for (int i=0;i<arr1.length;i++){
+            arr1[i]=arr1[arr.length-1];
+        }
+        return arr1;
+    }
 
     public static void main(String[] args) {
         String[] cars={"Corvette","Tesla","Jeep"};
