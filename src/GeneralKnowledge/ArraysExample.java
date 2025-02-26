@@ -4,21 +4,22 @@ import java.util.Arrays;
 
 public class ArraysExample {
     // An array is used to store multiple values in a single variable
-    public static int[] myFunction(int [] arr1){
-        int[] myArr= new int [arr1.length];
-        for (int i=0,j=arr1.length-1;i<arr1.length;i++,j--){
-            myArr[i]=arr1[j];
-            System.out.println(myArr[i]);
+    public static int[] uniqueArray(int [] myArr){
+        int[] thisArr= new int [myArr.length];
+        for (int i=0,j=myArr.length-1;i<myArr.length;i++,j--){
+            thisArr[i]=myArr[j];
+            System.out.println(thisArr[i]);
         }
-        return myArr;
+        return thisArr;
     }
 
     public static void main(String[] args) {
-        int[] kenya=new int[3];
-        kenya[0]=24;
+        int[] kenya= new int [3];
+        kenya[0]=47;
         kenya[1]=35;
-        kenya[2]=40;
-        ArraysExample.myFunction(kenya);
+        kenya[2]=25;
+
+        ArraysExample.uniqueArray(kenya);
         String[] cars={"Corvette","Tesla","Jeep"};
         cars[0]="Mustang";
         //System.out.println(cars[0]);
