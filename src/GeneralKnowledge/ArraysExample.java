@@ -18,6 +18,7 @@ public class ArraysExample {
         kenya[0]=47;
         kenya[1]=35;
         kenya[2]=25;
+        //New attempt
 
         ArraysExample.uniqueArray(kenya);
         String[] cars={"Corvette","Tesla","Jeep"};
