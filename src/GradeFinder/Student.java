@@ -3,14 +3,16 @@ import javax.naming.Name;
 import javax.swing.*;
 import java.io.FilenameFilter;
 
-public class Student {
+public class Student <T>{
+    
     protected String Name;
     protected double mark,mark1,mark2,mark3;
     protected double total;
     protected double average;
     protected char grade;
     protected int StudentID;
-    final int Number_of_tests=3;
+    final static int NUMBER_OF_TESTS=3;
+    protected int population=0;
 
     public Student() {
         average = 50.0;
@@ -49,7 +51,7 @@ public class Student {
         this.mark2=mark2;
         this.mark3=mark3;
         this.total=this.mark1+this.mark2+this.mark3;
-        this.average=this.total/Number_of_tests;
+        this.average=this.total/NUMBER_OF_TESTS;
     }
 
 
@@ -133,6 +135,8 @@ public class Student {
         System.out.println("Class average: " + classaverage);
 
     }
+
+
 
 
 }

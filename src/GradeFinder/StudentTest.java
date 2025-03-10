@@ -9,6 +9,7 @@ public class StudentTest {
         Student[] students=new Student[number];
         FindAvg(students);
         displayStudents(students);
+
     }
 
 
