@@ -1,21 +1,32 @@
 package GeneralKnowledge.leetCode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSum {
-    int[] array= new int[3];
+    int[] array;
 
     public TwoSum(int[] array){
         this.array=array;
     }
-    public static void twoSum(int[] nums, int target){
-        for (int i=0; i< nums.length;i++){
-            for (int j=i+1; j<nums.length;j++){
-                if (nums[i]+nums[j]==target){
-                    int [] array2={i,j};
-                    System.out.print(array2+" ");
-                }
+    public static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> complements = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            Integer complementIndex = complements.get(nums[i]);
+            if (complementIndex != null) {
+                return new int[]{i, complementIndex};
             }
-        }
-        System.out.println("Could not find two-sum");
-    }
+            complements.put(target - nums[i], i);
 
+
+        }
+        return nums;
+    }
+    @Override
+    public String toString(){
+        for (int i=0; i<array.length;i++){
+            System.out.println(array[i]+" ");
+        }
+        return "Array elements displayed";
+    }
 }
