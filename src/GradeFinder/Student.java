@@ -1,9 +1,7 @@
 package GradeFinder;
-import javax.naming.Name;
 import javax.swing.*;
-import java.io.FilenameFilter;
 
-public class Student <T>{
+public class Student {
     
     protected String Name;
     protected double mark,mark1,mark2,mark3;
@@ -73,17 +71,12 @@ public class Student <T>{
 
 
     public static boolean verify(Student student) {
-        if (student.mark1 < 0 || student.mark1 > 100) {
-            return false;
-        } else if (student.mark2<0 || student.mark2>100){
-
-            return false;
-        } else if (student.mark3<0 || student.mark3>100){
+        if (student.mark1 < 0 || student.mark1 > 100 &&
+                student.mark2<0 || student.mark2>100 &&
+                student.mark3<0||student.mark3>100) {
             return false;
         }
-        else {
-            return true;
-        }
+        return true;
     }
 
     public static char getGrade(Student student) {
@@ -114,25 +107,23 @@ public class Student <T>{
         String name;
         double mark1,mark2,mark3;
         double sum = 0.0;
-        double classaverage;
+        double classAverage;
         for (int i = 0; i < students.length; i++) {
             name = JOptionPane.showInputDialog("Enter student name");
             mark1 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 1 mark:"));
             mark2 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 2 mark:"));
             mark3 = Double.parseDouble(JOptionPane.showInputDialog("Enter Exam 3 mark:"));
             students[i] = new Student(name, mark1,mark2,mark3);
-            if (verify(students[i]) == false) {
-                JOptionPane.showMessageDialog(null, "Wrong marks input. Enter name and marks again");
-                i--;
-            } else {
+            if (verify(students[i])) {
                 Student.getGrade(students[i]);
                 sum = sum + students[i].average;
+            }else{
+                JOptionPane.showMessageDialog(null, "Wrong marks input. Enter name and marks again");
+                i--;
             }
-
-
         }
-        classaverage = sum / students.length;
-        System.out.println("Class average: " + classaverage);
+        classAverage = sum / students.length;
+        System.out.println("Class average: " + classAverage);
 
     }
 
