@@ -66,4 +66,8 @@ public class Student {
     public void setGrade(char grade) {
         this.grade = grade;
     }
+    @Override
+    public String toString(){
+        return "Name:"+ Name+" Grade: "+ grade;
+    }
 }
