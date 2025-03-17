@@ -1,5 +1,6 @@
 package Refactorization;
-
+import javax.swing.*;
+import java.util.*;
 public class Student {
     private String Name;
 
@@ -10,16 +11,16 @@ public class Student {
     private double exam1,exam2,exam3;
 
     private double total;
-    private double avg=total/3;
+    private double avg;
+    public static int NUMBER_OF_EXAMS=3;
     public Student(){
 
     }
-    public Student(String Name, char grade) {
+    public Student(String Name) {
         this.Name=Name;
-        this.grade = grade;
     }
 
-    public void FindGrade(Student s1){
+    public char FindGrade(){
         if (avg<40){
             grade='F';
         } else if (avg<50) {
@@ -31,11 +32,13 @@ public class Student {
         }else{
             grade='A';
         }
+        return grade;
     }
-    public boolean verification(Student s2){
-        if (exam1<0||exam1>100 &&
-                exam2<0 || exam2>100 &&
+    public boolean verification(){
+        if (exam1<0||exam1>100 ||
+                exam2<0 || exam2>100 ||
                 exam3<0 || exam3>100){
+//            JOptionPane.showMessageDialog(null,"Mark range out of scope for one or more exams\nTry again..");
             return false;
         }
         return true;
@@ -69,5 +72,26 @@ public class Student {
     @Override
     public String toString(){
         return "Name:"+ Name+" Grade: "+ grade;
+    }
+    public double inputMarks(){
+        exam1= Double.parseDouble(JOptionPane.showInputDialog("Exam 1: "));
+        exam2= Double.parseDouble(JOptionPane.showInputDialog("Exam 2: "));
+        exam3= Double.parseDouble(JOptionPane.showInputDialog("Exam 3: "));
+        total=exam1+exam2+exam3;
+        avg=total/NUMBER_OF_EXAMS;
+        return avg;
+    }
+
+    public void getDetails(Student anyStudent){
+        A:while (true){
+            anyStudent.inputMarks();
+            if (anyStudent.verification()){
+                anyStudent.FindGrade();
+                System.out.println(anyStudent);
+                break A;
+            }else{
+                JOptionPane.showMessageDialog(null,"Mark range out of scope for one or more exams\nTry again.");
+            }
+        }
     }
 }

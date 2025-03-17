@@ -14,7 +14,7 @@ public class GenericList <T>{
         students[count]=student;
         count++;
     }
-    public void getStudent(int number){
-        System.out.println(students[number]);
+    public T getStudent(int number){
+        return students[number];
     }
 }
