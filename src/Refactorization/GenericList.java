@@ -8,8 +8,6 @@ public class GenericList <T> {
         this.population=population;
         this.students=(T[])new Object[population];
     }
-
-
     public void addStudent(T student){
         students[count]=student;
         count++;
