@@ -1,6 +1,6 @@
 package Refactorization;
 import javax.swing.*;
-import java.util.*;
+
 public class Student {
     private String Name;
 
@@ -71,7 +71,7 @@ public class Student {
     }
     @Override
     public String toString(){
-        return "Name:"+ Name+" Grade: "+ grade;
+        return "Name:"+ Name+", Grade: "+ grade+", Score: "+ avg;
     }
     public double inputMarks(){
         exam1= Double.parseDouble(JOptionPane.showInputDialog("Exam 1: "));
@@ -82,12 +82,12 @@ public class Student {
         return avg;
     }
 
-    public void getDetails(Student anyStudent){
+    public void inputDetails(){
         A:while (true){
-            anyStudent.inputMarks();
-            if (anyStudent.verification()){
-                anyStudent.FindGrade();
-                System.out.println(anyStudent);
+            this.inputMarks();
+            if (this.verification()){
+                this.FindGrade();
+//                System.out.println(this);
                 break A;
             }else{
                 JOptionPane.showMessageDialog(null,"Mark range out of scope for one or more exams\nTry again.");

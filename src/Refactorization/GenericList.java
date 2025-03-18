@@ -1,6 +1,6 @@
 package Refactorization;
 
-public class GenericList <T>{
+public class GenericList <T> {
     T[] students;
     int population;
     int count=0;
