@@ -87,11 +87,21 @@ public class Student {
             this.inputMarks();
             if (this.verification()){
                 this.FindGrade();
-//                System.out.println(this);
                 break A;
             }else{
                 JOptionPane.showMessageDialog(null,"Mark range out of scope for one or more exams\nTry again.");
             }
         }
+
     }
+
+    public static void main(String[] args) {
+        Student[] student25 =new Student[1];
+        for (int h = 0; h< student25.length; h++){
+            student25[h]= new Student("Alicia");
+            student25[h].inputDetails();
+            System.out.println(student25[h]);
+        }
+    }
+
 }
