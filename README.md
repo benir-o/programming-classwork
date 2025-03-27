@@ -9,7 +9,6 @@ Welcome to my Java Object-Oriented Programming (OOP) classwork repository. This 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -56,9 +55,6 @@ Explore the different Java files in the repository to understand various OOP con
 
 Contributions are welcome! If you have any improvements or additional exercises related to Java OOP, feel free to submit a pull request. Please ensure your code follows the existing coding style and includes appropriate comments.
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
@@ -67,4 +63,3 @@ If you have any questions or suggestions, feel free to reach out to me:
 - **GitHub:** [benir-o](https://github.com/benir-o)
 - **Email:** [beniromenda@gmail.com]
 
-Happy coding! 😄
