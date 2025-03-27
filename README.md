@@ -1,6 +1,6 @@
 # Java OOP Programming Classwork
 
-Welcome to my Java Object-Oriented Programming (OOP) classwork repository. This repository contains my learning space for Java OOP concepts and assignments.
+Welcome to my Java Object-Oriented Programming (OOP) classwork repository. This repository contains my learning space for Java OOP concepts and assignments. Aside from that, there are also personal problem solving exercises, partially on problem solving algorithms and other real-world applications. Feel free to suggest any improvements!
 
 ## Table of Contents
 
@@ -56,9 +56,15 @@ Explore the different Java files in the repository to understand various OOP con
 
 Contributions are welcome! If you have any improvements or additional exercises related to Java OOP, feel free to submit a pull request. Please ensure your code follows the existing coding style and includes appropriate comments.
 
+## License
+
+This repository is licensed under the [MIT License](LICENSE).
+
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out to me:
 
 - **GitHub:** [benir-o](https://github.com/benir-o)
 - **Email:** [beniromenda@gmail.com]
+
+Happy coding! 😄
