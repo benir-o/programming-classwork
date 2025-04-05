@@ -1,6 +1,6 @@
 # The Programming Classwork Repository
 
-This repository covers 40-50 % of the work I do on a daily or weekly basis. It covers key concepts in Java such as Object Oriented Programming, Streams API and Algorithms and data structures. There are many folders and subfolders covering these topics in detail. The most recent Algorithm is the TwoSum algorithm, where I use maps in order to achieve better effeciency, as compared to brute force methods.
+This repository covers 40-50 % of the work I do on a daily or weekly basis, although I have other repositories that contain more specific projects. This repository covers key concepts in Java such as Object Oriented Programming, Streams API and Algorithms and data structures. There are many folders and subfolders covering these topics in detail. The most recent Algorithm is the TwoSum algorithm, where I use maps in order to achieve better effeciency, as compared to brute force methods.
 
 I have a refactorization folder in which i attempt to make continuous improvements on code as I gain experience on dealing with certain concepts.
 
