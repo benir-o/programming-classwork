@@ -45,6 +45,37 @@ public class Student {
     }
 
 
+
+    public void setGrade(char grade) {
+        this.grade = grade;
+    }
+
+    @Override
+    public String toString(){
+        return "Name:"+ Name+", Grade: "+ grade+", Score: "+ avg;
+    }
+    public double inputMarks(){
+        exam1= Double.parseDouble(JOptionPane.showInputDialog("Exam 1: "));
+        exam2= Double.parseDouble(JOptionPane.showInputDialog("Exam 2: "));
+        exam3= Double.parseDouble(JOptionPane.showInputDialog("Exam 3: "));
+        total=exam1+exam2+exam3;
+        avg=total/NUMBER_OF_EXAMS;
+        return Math.floor(avg);
+    }
+    public void inputDetails(){
+        A:while (true){
+            this.inputMarks();
+            if (this.verification()){
+                this.FindGrade();
+                break A;
+
+            }else{
+                JOptionPane.showMessageDialog(null,"Mark range out of scope for one or more exams\nTry again.");
+            }
+        }
+
+    }
+
     public String getName() {
         return Name;
     }
@@ -65,43 +96,14 @@ public class Student {
         return grade;
     }
 
-
-    public void setGrade(char grade) {
-        this.grade = grade;
-    }
-    @Override
-    public String toString(){
-        return "Name:"+ Name+", Grade: "+ grade+", Score: "+ avg;
-    }
-    public double inputMarks(){
-        exam1= Double.parseDouble(JOptionPane.showInputDialog("Exam 1: "));
-        exam2= Double.parseDouble(JOptionPane.showInputDialog("Exam 2: "));
-        exam3= Double.parseDouble(JOptionPane.showInputDialog("Exam 3: "));
-        total=exam1+exam2+exam3;
-        avg=total/NUMBER_OF_EXAMS;
+    public double getAvg() {
         return avg;
     }
 
-    public void inputDetails(){
-        A:while (true){
-            this.inputMarks();
-            if (this.verification()){
-                this.FindGrade();
-                break A;
-            }else{
-                JOptionPane.showMessageDialog(null,"Mark range out of scope for one or more exams\nTry again.");
-            }
-        }
-
-    }
-
     public static void main(String[] args) {
-        Student[] student25 =new Student[1];
-        for (int h = 0; h< student25.length; h++){
-            student25[h]= new Student("Alicia");
-            student25[h].inputDetails();
-            System.out.println(student25[h]);
-        }
+
+        Utils.getStudentDetails();
+
     }
 
 }
