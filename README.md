@@ -1,55 +1,12 @@
-# Java OOP Programming Classwork
+# The Programming Classwork Repository
 
-Welcome to my Java Object-Oriented Programming (OOP) classwork repository. This repository contains my learning space for Java OOP concepts and assignments. Aside from that, there are also personal problem solving exercises, partially on problem solving algorithms and other real-world applications. Feel free to suggest any improvements!
+This repository covers 40-50 % of the work I do on a daily or weekly basis. It covers key concepts in Java such as Object Oriented Programming, Streams API and Algorithms and data structures. There are many folders and subfolders covering these topics in detail. The most recent Algorithm is the TwoSum algorithm, where I use maps in order to achieve better effeciency, as compared to brute force methods.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Contact](#contact)
-
-## Introduction
-
-This repository is dedicated to assignments and exercises related to Java Object-Oriented Programming. It includes various projects and code snippets that demonstrate the core concepts of OOP such as classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
-
-## Features
-
-- **Classes and Objects:** Learn and implement the basics of classes and objects.
-- **Inheritance:** Understand and apply the concept of inheritance in Java.
-- **Polymorphism:** Explore method overloading and overriding.
-- **Encapsulation:** Protect data using access modifiers.
-- **Abstraction:** Implement abstract classes and interfaces.
-
-## Getting Started
-
-To get started with this repository, follow these steps:
-
-1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/benir-o/programming-classwork.git
-    ```
-
-2. **Navigate to the repository directory:**
-    ```sh
-    cd programming-classwork
-    ```
-
-3. **Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse, VS Code):**
-
-4. **Compile and run the Java programs:**
-    - Ensure you have Java Development Kit (JDK) installed.
-    - Use the IDE's build and run features, or use the command line:
-    ```sh
-    javac path/to/your/JavaFile.java
-    java path/to/your/JavaFile
-    ```
+I have a refactorization folder in which i attempt to make continuous improvements on code as I gain experience on dealing with certain concepts.
 
 ## Usage
 
-Explore the different Java files in the repository to understand various OOP concepts. Each file is named according to the topic it covers, making it easy to find and learn specific concepts.
+Explore the different Java files in the repository to understand the various code concepts. Each file is named according to the topic it covers, making it easy to find and learn specific concepts.
 
 ## Contributing
 
