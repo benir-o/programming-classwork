@@ -19,5 +19,13 @@ public class Utils {
         var avg=stdList.stream().map(m->m.getAvg()).reduce(0.0,Double::sum)/stdList.size();
         System.out.println(avg);
     }
+    public static void GeneralizeStudents(){
+        GenericList<Student> Strathmore=new GenericList<>(2);
+        for (int i=0;i< Strathmore.population;i++){
+            String name=JOptionPane.showInputDialog("Enter Student name: ");
+            Strathmore.addStudent(new Student(name));
+            Strathmore.getEverybody(0).inputDetails();
+        }
+    }
 
 }
