@@ -24,7 +24,7 @@ public class Utils {
         for (int i=0;i< Strathmore.population;i++){
             String name=JOptionPane.showInputDialog("Enter Student name: ");
             Strathmore.addStudent(new Student(name));
-            Strathmore.getEverybody(0).inputDetails();
+            Strathmore.getEverybody(i).inputDetails();
         }
     }
 

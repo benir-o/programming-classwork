@@ -15,8 +15,9 @@ public class GenericList <T> {
     public T getStudent(int number){
         return everybody[number];
     }
-    public Student getEverybody(int population){
-        for (int i=0;i<population;i++){
+    public Student getEverybody(int reiterate){
+        for (int i = 0; i< reiterate; i++){
+
 
         }
         return  (Student) everybody[0];
