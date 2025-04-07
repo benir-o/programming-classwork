@@ -1,6 +1,8 @@
 package Refactorization;
 
-public class GenericList <T> {
+import java.util.ArrayList;
+
+public class GenericList <T> extends ArrayList {
     T[] everybody;
     int population;
     int count=0;
@@ -15,12 +17,8 @@ public class GenericList <T> {
     public T getStudent(int number){
         return everybody[number];
     }
-    public Student getEverybody(int reiterate){
-        for (int i = 0; i< reiterate; i++){
-
-
-        }
-        return  (Student) everybody[0];
+    public T getEverybody(int reiterate){
+        return  everybody[reiterate];
     }
     @Override
     public String toString(){

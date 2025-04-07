@@ -2,6 +2,7 @@ package Refactorization;
 
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class Utils {
@@ -25,6 +26,7 @@ public class Utils {
             String name=JOptionPane.showInputDialog("Enter Student name: ");
             Strathmore.addStudent(new Student(name));
             Strathmore.getEverybody(i).inputDetails();
+            System.out.println(Strathmore.getEverybody(i));
         }
     }
 
