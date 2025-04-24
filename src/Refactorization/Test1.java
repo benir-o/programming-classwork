@@ -5,5 +5,6 @@ public class Test1 {
         GenericList<Student> Strathmore=new GenericList<>(2);
         Strathmore.addStudent(new Student("Alicia"));
         //System.out.println(Strathmore.getEverybody(0));
+        //Attempt 2
     }
 }
