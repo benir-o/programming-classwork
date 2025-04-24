@@ -50,7 +50,7 @@ Quantum Grid offers a solution by leveraging **object-oriented programming princ
 - AI-based consumption forecasting  
 - Advanced token history visualization  
 
-## 🤝 Contributors
+## 🤝 Collaborators
 
 - [Angela Omondi] – Documentation and Research
 - [Benir Omenda] – Project Lead
@@ -58,6 +58,7 @@ Quantum Grid offers a solution by leveraging **object-oriented programming princ
 - [Brian Mathara] – Innovation and Feature Planning
 - [Gabriel Osugo] – Project Architect
 - [JoyJudy Wangui] – Backend integration and Support
+  
  
 
 
