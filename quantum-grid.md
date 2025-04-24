@@ -52,12 +52,12 @@ Quantum Grid offers a solution by leveraging **object-oriented programming princ
 
 ## 🤝 Contributors
 
-- [Angela Omondi] – Developer
+- [Angela Omondi] – Documentation and Research
 - [Benir Omenda] – Project Lead
-- [Suraj Menariya] – Developer
-- [Brian Mathara] – Developer
+- [Suraj Menariya] – Deployment coordinator
+- [Brian Mathara] – Innovation and Feature Planning
 - [Gabriel Osugo] – Project Architect
-- [JoyJudy Wangui] – Developer
+- [JoyJudy Wangui] – Backend integration and Support
  
 
 
