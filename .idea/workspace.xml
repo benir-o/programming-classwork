@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="795803be-4294-4227-a4d1-ec865a84bb85" name="Changes" comment="sets in python" />
+    <list default="true" id="795803be-4294-4227-a4d1-ec865a84bb85" name="Changes" comment="sets  and queues in python">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745920974047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sets  and queues in python">
+      <option name="closed" value="true" />
+      <created>1745922116320</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745922116320</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +130,7 @@
     <MESSAGE value="Andromeda 2 push attempt" />
     <MESSAGE value="Dictionaries in Python" />
     <MESSAGE value="sets in python" />
-    <option name="LAST_COMMIT_MESSAGE" value="sets in python" />
+    <MESSAGE value="sets  and queues in python" />
+    <option name="LAST_COMMIT_MESSAGE" value="sets  and queues in python" />
   </component>
 </project>
