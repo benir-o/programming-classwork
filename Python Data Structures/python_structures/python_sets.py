@@ -7,3 +7,4 @@ order.
 They are defined using curly braces {} or the set () constructor, with items
 separated by commas
 '''
+print("Sets can perform mathematical operations")
