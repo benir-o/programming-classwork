@@ -10,14 +10,14 @@ public class Node {
         return "Data: "+data;
     }
 class LinkedList{
-        public static int countNodes(Node head, int sum){
-
-            if (head.next==null){
-                return sum;
+        public static int countNodes(Node head){
+            int count=1;
+            Node current=head;
+            while(current.next!=null){
+                current=current.next;
+                count++;
             }
-            else {
-                return countNodes(head.next,sum+1);
-            }
+            return count;
         }
 
 }
@@ -30,6 +30,6 @@ class LinkedList{
         nodeA.next=nodeB;
         nodeB.next=nodeC;
         nodeC.next=nodeD;
-        System.out.println(LinkedList.countNodes(nodeA,1));
+        System.out.println(LinkedList.countNodes(nodeA));
     }
 }
