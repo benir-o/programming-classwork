@@ -18,5 +18,5 @@ Contributions are welcome! If you have any improvements or additional exercises 
 If you have any questions or suggestions, feel free to reach out to me:
 
 - **GitHub:** [benir-o](https://github.com/benir-o)
-- **Email:** [beniromenda@gmail.com]
+- **Email:** [benir](beniromenda@gmail.com)
 
