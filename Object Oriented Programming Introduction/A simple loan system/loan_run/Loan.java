@@ -8,6 +8,7 @@ public class Loan {
         principal =0;
 
     }
+    //Final Tests
     Loan(double principal, int time){
         this.principal = principal;
         this.time=time;
