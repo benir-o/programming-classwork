@@ -8,6 +8,7 @@ class Conversion{
         result=Math.sqrt(num);
         return result;
     }
+    //
     public void someOtherMethod(){
         someNumber=7;
     }
