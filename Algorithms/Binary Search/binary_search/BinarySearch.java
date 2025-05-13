@@ -1,8 +1,11 @@
+import java.lang.reflect.Array;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] array={-2,3,4,7,8,9,11,13};
         int target=11;
         BinarySearch.search(array,target);
+        System.out.println(BinarySearch.rotate(array));
 
     }
     public static int search(int[] arr,int target){
@@ -22,5 +25,14 @@ public class BinarySearch {
             }
         }
         return -1;
+    }
+    //Rotating an array by a factor of 1.
+    public static int rotate(int[] array){
+        int first=array[0];
+        for (int i=0;i<array.length-1;i++){
+            array[i]=array[i+1];
+        }
+        array[array.length-1]=first;
+        return array[array.length-1];
     }
 }
