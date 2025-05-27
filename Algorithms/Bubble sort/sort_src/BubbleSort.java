@@ -1,18 +1,27 @@
 public class BubbleSort {
+    static void swap(int[] array, int index1,int index2){
+        var temp=array[index1];
+        array[index1]=index2;
+        array[index2]=temp;
+    }
     public static void main(String[] args) {
         int [] nums={4,2,1,3};
 
+        boolean isSorted;
         for (int i=0;i<nums.length;i++){
-            for (int j=0;j<nums.length-1;j++){
+            isSorted=true;
+            for (int j=0;j<(nums.length-1)-i;j++){
                 if (nums[j]>nums[j+1]){
-                    var temp=nums[j];
-                    nums[j]=nums[j+1];
-                    nums[j+1]=temp;
+                    swap(nums,j,j+1);
+                    isSorted=false;
                 }
             }
+            if (isSorted){
+                break;
+            }
         }
-        for (int k=0;k<nums.length;k++){
-            System.out.println(nums[k]);
+        for (int num : nums) {
+            System.out.println(num);
         }
     }
 }
