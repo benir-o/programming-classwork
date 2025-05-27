@@ -1,9 +1,6 @@
 public class Node {
     int data;
     Node next;
-    public Node (){
-
-    }
     public Node(int data){
         this.data=data;
         this.next=null;
@@ -48,6 +45,7 @@ static class LinkedList{
 
     public static void main(String[] args) {
         var l1=new LinkedList();
+        //At this point the head node is null
         l1.appendNode(20);
         l1.appendNode(30);
         l1.appendNode(40);
