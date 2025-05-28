@@ -17,6 +17,17 @@ public class Tree {
     void inorder(){
         inorder(root);
     }
+    void postorder(Node node){
+        if (node==null){
+            return;
+        }
+        postorder(node.left);
+        postorder(node.right);
+        System.out.println(node.data);
+    }
+    void postorder(){
+        postorder(root);
+    }
 
 
 }

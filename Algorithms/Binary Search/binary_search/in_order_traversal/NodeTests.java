@@ -8,8 +8,10 @@ public class NodeTests {
         t1.root=node1;
         node1.left= new Node(2);
         node1.right=new Node(3);
+        node1.right.right=new Node(6);
         node1.left.left=new Node(4);
         node1.left.right=new Node(5);
-        t1.inorder();
+        //t1.inorder();
+        t1.postorder();
     }
 }
