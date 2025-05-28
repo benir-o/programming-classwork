@@ -1,4 +1,4 @@
-package in_order_traversal;
+package binary_tree_traversals;
 
 public class NodeTests {
     public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class NodeTests {
         node1.left.left=new Node(4);
         node1.left.right=new Node(5);
         //t1.inorder();
-        t1.postorder();
+        //t1.postorder();
+        t1.preorder();
     }
 }

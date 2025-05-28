@@ -1,6 +1,4 @@
-package in_order_traversal;
-
-import javax.print.attribute.standard.JobOriginatingUserName;
+package binary_tree_traversals;
 
 public class Node {
     Node left;

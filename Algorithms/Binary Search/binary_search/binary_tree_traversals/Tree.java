@@ -1,4 +1,4 @@
-package in_order_traversal;
+package binary_tree_traversals;
 
 public class Tree {
     Node root;
@@ -27,6 +27,17 @@ public class Tree {
     }
     void postorder(){
         postorder(root);
+    }
+    void preorder(Node node){
+        if (node==null){
+            return;
+        }
+        System.out.println(node.data);
+        preorder(node.left);
+        preorder(node.right);
+    }
+    void preorder(){
+        preorder(root);
     }
 
 
