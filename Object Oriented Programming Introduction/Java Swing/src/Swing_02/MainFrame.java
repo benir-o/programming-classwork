@@ -18,7 +18,17 @@ public class MainFrame {
 
         JPanel panel= new JPanel();
         panel.setLayout(new FlowLayout(FlowLayout.CENTER,10,5));
+        panel.setBackground(Color.BLUE);
         frame.add(panel,BorderLayout.CENTER);
+
+        Button button1 =new Button("Button");
+        panel.add(button1);
+
+        Button button2 =new Button("Button");
+        panel.add(button2);
+
+        Button button3 =new Button("Button");
+        panel.add(button3);
 
         frame.setVisible(true);
     }

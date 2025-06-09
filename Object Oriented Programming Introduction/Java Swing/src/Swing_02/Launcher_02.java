@@ -7,6 +7,7 @@ public class Launcher_02 {
         SwingUtilities.invokeLater(new Runnable(){
             @Override
             public void run(){
+                MainFrame f1=new MainFrame();
 
             }
         });
