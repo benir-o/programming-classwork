@@ -2,9 +2,11 @@ package Swing_02;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.concurrent.Flow;
 
 public class MainFrame {
     private JFrame frame;
+    private JPanel panel;
     public MainFrame(){
         initialize();
     }
@@ -35,18 +37,21 @@ public class MainFrame {
     private void initialize(){
         frame= new JFrame();
         frame.setTitle("BorderPane Demo");
+
+
+        panel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,5));
+        panel.setBackground(Color.pink);
+
+        //Adding five Buttons to the panel
+        for (int i=1;i<=5;i++){
+            JButton button=new JButton("Button"+ Integer.toString(i));
+            panel.add(button);
+        }
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(800,500);
-        BorderLayout borderLayout=new BorderLayout();
-        borderLayout.setHgap(10);
-        borderLayout.setVgap(10);
-        frame.setLayout(borderLayout);
-        frame.setLocationRelativeTo(null);
-        frame.add(new JButton("NORTH"),BorderLayout.NORTH);
-        frame.add(new JButton("WEST"),BorderLayout.WEST);
-        frame.add(new JButton("EAST"),BorderLayout.EAST);
-        frame.add(new JButton("SOUTH"),BorderLayout.SOUTH);
-        frame.add(new JButton("CENTER"),BorderLayout.CENTER);
+
+        frame.add(panel,BorderLayout.NORTH);
+
 
 
 
