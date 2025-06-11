@@ -6,7 +6,7 @@ import java.awt.*;
 public class MainFrame {
     private JFrame frame;
     public MainFrame(){
-        initializeFrame();
+        initialize();
     }
     private void initializeFrame(){
         frame=new JFrame();
@@ -29,6 +29,26 @@ public class MainFrame {
 
         Button button3 =new Button("Button");
         panel.add(button3);
+
+        frame.setVisible(true);
+    }
+    private void initialize(){
+        frame= new JFrame();
+        frame.setTitle("BorderPane Demo");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(800,500);
+        BorderLayout borderLayout=new BorderLayout();
+        borderLayout.setHgap(10);
+        borderLayout.setVgap(10);
+        frame.setLayout(borderLayout);
+        frame.setLocationRelativeTo(null);
+        frame.add(new JButton("NORTH"),BorderLayout.NORTH);
+        frame.add(new JButton("WEST"),BorderLayout.WEST);
+        frame.add(new JButton("EAST"),BorderLayout.EAST);
+        frame.add(new JButton("SOUTH"),BorderLayout.SOUTH);
+        frame.add(new JButton("CENTER"),BorderLayout.CENTER);
+
+
 
         frame.setVisible(true);
     }
