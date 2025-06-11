@@ -8,7 +8,7 @@ public class MainFrame {
     private JFrame frame;
     private JPanel panel;
     public MainFrame(){
-        initialize();
+        gridLayout();
     }
     private void initializeFrame(){
         frame=new JFrame();
@@ -52,9 +52,21 @@ public class MainFrame {
 
         frame.add(panel,BorderLayout.NORTH);
 
+        frame.setVisible(true);
+    }
+    private void gridLayout(){
+        frame=new JFrame();
+        frame.setTitle("GridLayout Demo");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(800,500);
+        panel =new JPanel(new GridLayout(4,5,10,10));
 
-
-
+        for (int i=1;i<=20;i++){
+            JButton button=new JButton("Button"+ Integer.toString(i));
+            panel.add(button);
+        }
+        frame.add(panel);
+        frame.pack();
         frame.setVisible(true);
     }
 }
