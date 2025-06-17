@@ -23,5 +23,23 @@ public class BubbleSort {
         for (int num : nums) {
             System.out.println(num);
         }
+        //Attempt 2
+        for (int i=0;i<nums.length;i++){
+            boolean sorted=true;
+            for (int j=0;j<(nums.length-1)-i;j++){
+                if (nums[j]>nums[j+1]){
+                    int temp=nums[j];
+                    nums[j]=nums[j+1];
+                    nums[j+1]=temp;
+                    sorted=false;
+                }
+            }
+            if(sorted){
+                break;
+            }
+        }
+        for (var num1: nums){
+            System.out.print(num1+" ");
+        }
     }
 }
